@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function() {
       lengua: "Traducir aquí su lengua"
     },
     footer: {
-      espanol: 'Esta es la versión 0.1. aquí puedes escribir el número de palabras que posee su diccionario. Es un proyecto libre, replicable sin fines de lucro. Traducciones pueden realizarse bajo la licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.',
-      lengua: 'Traducir aquí su lengua <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.'
+      espanol: 'Esta es la versión 0.1. aquí puedes escribir el número de palabras que posee su diccionario. Es un proyecto libre, replicable sin fines de lucro. Traducciones pueden realizarse bajo la licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank">CC BY-NC-SA 4.0</a>.',
+      lengua: 'Traducir aquí su lengua <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">CC BY-NC-SA 4.0</a>.'
     }
   };
 
