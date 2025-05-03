@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Etiqueta raíz HTML con atributo de idioma español -->
+<head> 
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración responsive para dispositivos móviles -->
+    <title>Diccionario Español-Zapoteco</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Favicon (icono de pestaña) del sitio -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Conexión a la hoja de estilos CSS externa -->
+</head>
+<body> 
+    <!-- Título principal de la página -->
+    <h1 id="titulo">Diccionario Español-Zapoteco</h1>
+    
+    <!-- Contenedor para el logo centrado -->
+    <div style="display: flex; justify-content: center;">
+      <img src="img/logo.png" style="width: 200px; max-width: 100%;"> <!-- Logo con ancho fijo y responsive -->
+    </div>
+    
+    <!-- Sección del buscador con selector de idioma -->
+    <div class="search-container">
+        <!-- Botones para alternar entre búsqueda en español o zapoteco -->
+        <div class="language-toggle">
+            <div class="toggle-btn active" id="espanol-btn">Buscar en Español</div> <!-- Botón de español (activo por defecto) -->
+            <div class="toggle-btn" id="zapoteco-btn">Buscar en Zapoteco</div> <!-- Botón de zapoteco -->
+        </div>
+        
+        <!-- Caja de búsqueda con input y botón -->
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Escribe una palabra en español..."> <!-- Campo de entrada de texto -->
+            <button id="search-btn">Buscar</button> <!-- Botón para iniciar la búsqueda -->
+        </div>
+    </div>
+    
+    <!-- Contenedor donde se mostrarán los resultados de búsqueda -->
+    <div id="results">
+        <p id="resultados-texto">Los resultados de la búsqueda aparecerán aquí.</p>
+    </div>
+    
+    <!-- Sección de instrucciones de uso -->
+    <div class="instructions" id="instrucciones">
+        <h3 id="titulo-instrucciones">Instrucciones:</h3>
+        <p id="instruccion0" style="display: none;"></p> <!-- Párrafo oculto (posiblemente para uso futuro) -->
+        <p id="instruccion1">1. Selecciona el idioma en el que deseas buscar</p>
+        <p id="instruccion2">2. Escribe la palabra en el campo de búsqueda</p>
+        <p id="instruccion3">3. Haz clic en "Buscar" o presiona Enter</p>
+        <p id="instruccion4">4. Si deseas sugerir correcciones u observaciones, puedes mandar un mensaje a <a href="https://www.facebook.com/Ualth.MeintHzz">@Ualth.MeintHz</a>.</p>
+    </div>
+    
+    <!-- Conexión al archivo JavaScript para la funcionalidad interactiva -->
+    <script src="js/script.js"></script>
+    
+    <!-- Pie de página con información del proyecto -->
+    <footer id="footer-info" style="margin-top: 40px; padding: 20px; background-color: #edf2f7; text-align: center; border-radius: 8px; font-size: 14px; color: #2d3748;">
+        Esta es la versión 0.1, cuenta con 2400 palabras en español y zapoteco sin definiciones. 
+        Es un proyecto libre, replicable sin fines de lucro. 
+        Traducciones pueden realizarse bajo la <a id="cc-link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color:#3182ce;">licencia CC BY-NC-SA 4.0</a>.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario Español - Tu Lengua</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body> 
+    <!-- Título principal de la página -->
+    <h1 id="titulo">Diccionario Español - Tu Lengua</h1>
+    
+    <!-- Contenedor para el logo centrado -->
+    <div style="display: flex; justify-content: center;">
+      <img src="img/logo.png" style="width: 200px; max-width: 100%;" alt="Logo del diccionario">
+    </div>
+    
+    <!-- Sección del buscador con selector de idioma -->
+    <div class="search-container">
+        <!-- Botones para alternar entre búsqueda en español o tu lengua -->
+        <div class="language-toggle">
+            <div class="toggle-btn active" id="espanol-btn">Buscar en Español</div>
+            <div class="toggle-btn" id="zapoteco-btn">Buscar en Tu Lengua</div>
+        </div>
+        
+        <!-- Caja de búsqueda con input y botón -->
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Escribe una palabra en español...">
+            <button id="search-btn">Buscar</button>
+        </div>
+    </div>
+    
+    <!-- Contenedor donde se mostrarán los resultados de búsqueda -->
+    <div id="results">
+        <p id="resultados-texto">Los resultados de la búsqueda aparecerán aquí.</p>
+    </div>
+    
+    <!-- Sección de instrucciones de uso -->
+    <div class="instructions" id="instrucciones">
+        <h3 id="titulo-instrucciones">Instrucciones:</h3>
+        <p id="instruccion0" style="display: none;"></p>
+        <p id="instruccion1">1. Selecciona el idioma en el que deseas buscar</p>
+        <p id="instruccion2">2. Escribe la palabra en el campo de búsqueda</p>
+        <p id="instruccion3">3. Haz clic en "Buscar" o presiona Enter</p>
+        <p id="instruccion4">4. Si deseas sugerir correcciones u observaciones, puedes mandar un mensaje "tu dirección de contacto"</p>
+    </div>
+    
+    <!-- Pie de página con información del proyecto -->
+    <footer id="footer-info" style="margin-top: 40px; padding: 20px; background-color: #edf2f7; text-align: center; border-radius: 8px; font-size: 14px; color: #2d3748;">
+        Esta es la versión 0.1, "declarar el tamaño de tu corpus y características". 
+        Es un proyecto libre, replicable sin fines de lucro. 
+        Traducciones pueden realizarse bajo la <a id="cc-link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color:#3182ce;">licencia CC BY-NC-SA 4.0</a>.
+    </footer>
+    
+    <!-- Conexión al archivo JavaScript para la funcionalidad interactiva -->
+    <script src="js/script.js"></script>
+</body>
+</html>

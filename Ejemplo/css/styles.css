@@ -1,0 +1,357 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra principal */
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    background-color: #f9f9f9; /* Color de fondo gris claro */
+}
+
+/* Estilo del título principal (h1) */
+h1 {
+    color: #4a5568; /* Color de texto gris oscuro */
+    text-align: center; /* Centrado horizontal del texto */
+    margin-bottom: 30px; /* Espacio inferior */
+    font-size: 28px; /* Tamaño de la fuente */
+}
+
+/* Contenedor principal de la sección de búsqueda */
+.search-container {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Contenedor de los botones para cambiar entre español y zapoteco */
+.language-toggle {
+    display: flex; /* Disposición flexible para los botones */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Estilo base de los botones de cambio de idioma */
+.toggle-btn {
+    flex: 1; /* Cada botón ocupa el mismo espacio */
+    padding: 10px; /* Espacio interno */
+    text-align: center; /* Centrado del texto */
+    background-color: #e2e8f0; /* Color de fondo gris claro */
+    cursor: pointer; /* Cursor tipo mano al pasar sobre el botón */
+    color: #4a5568; /* Color de texto gris */
+    font-weight: normal; /* Peso de la fuente normal */
+}
+
+/* Estilo del botón de idioma activo/seleccionado */
+.toggle-btn.active {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+}
+
+/* Estilo específico para el primer botón (español) */
+.toggle-btn:first-child {
+    border-radius: 4px 0 0 4px; /* Redondea solo las esquinas izquierdas */
+}
+
+/* Estilo específico para el segundo botón (zapoteco) */
+.toggle-btn:last-child {
+    border-radius: 0 4px 4px 0; /* Redondea solo las esquinas derechas */
+    background-color: #e9f0f8; /* Color de fondo azul muy claro */
+}
+
+/* Contenedor del campo de entrada y botón de búsqueda */
+.search-box {
+    display: flex; /* Disposición flexible */
+    gap: 10px; /* Espacio entre elementos */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Estilo del campo de entrada de texto */
+input {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo común para todos los botones */
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espacio interno (vertical, horizontal) */
+    border-radius: 4px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor tipo mano */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Cambio de estilo al pasar el cursor sobre los botones */
+button:hover {
+    background-color: #45a049; /* Verde un poco más oscuro */
+}
+
+/* Contenedor de los resultados de búsqueda */
+#results {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera */
+    color: #333; /* Color de texto gris oscuro */
+}
+
+/* Estilo para cada elemento de palabra en los resultados */
+.word-item {
+    margin-bottom: 25px; /* Espacio inferior */
+    padding-bottom: 20px; /* Relleno inferior */
+    border-bottom: 1px solid #eee; /* Línea divisoria gris claro */
+}
+
+/* Quita el borde inferior del último elemento de palabra */
+.word-item:last-child {
+    border-bottom: none; /* Sin borde inferior */
+}
+
+/* Estilo para la palabra buscada en los resultados */
+.word {
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px; /* Tamaño de fuente */
+    color: #2d3748; /* Color de texto gris oscuro */
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+/* Estilo para el tipo gramatical de la palabra (sustantivo, verbo, etc.) */
+.type {
+    display: inline-block; /* Permite establecer dimensiones */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    background-color: #edf2f7; /* Fondo gris muy claro */
+    color: #4a5568; /* Color de texto gris */
+    padding: 3px 8px; /* Espacio interno (vertical, horizontal) */
+    border-radius: 12px; /* Bordes muy redondeados (forma de pastilla) */
+    margin-right: 10px; /* Espacio a la derecha */
+    margin-bottom: 8px; /* Espacio inferior */
+}
+
+/* Estilo para la traducción de la palabra */
+.translation {
+    font-size: 18px; /* Tamaño de fuente */
+    color: #4a5568; /* Color de texto gris */
+    margin-bottom: 8px; /* Espacio inferior */
+}
+
+/* Estilo para la definición de la palabra */
+.definition {
+    color: #718096; /* Color de texto gris medio */
+    margin-bottom: 10px; /* Espacio inferior */
+    line-height: 1.4; /* Altura de línea para mejor legibilidad */
+}
+
+/* Estilo para los enlaces */
+.link {
+    display: inline-block; /* Permite establecer dimensiones */
+    color: #3182ce; /* Color de texto azul */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 14px; /* Tamaño de fuente */
+    margin-top: 8px; /* Espacio superior */
+    cursor: pointer; /* Cursor tipo mano */
+}
+
+/* Cambio de estilo al pasar el cursor sobre los enlaces */
+.link:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilo para el mensaje de "no se encontraron resultados" */
+.no-results {
+    color: #e53e3e; /* Color de texto rojo */
+    text-align: center; /* Centrado horizontal */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Estilo para la sección de instrucciones */
+.instructions {
+    margin-top: 30px; /* Espacio superior */
+    padding: 15px; /* Espacio interno */
+    background-color: #ebf8ff; /* Fondo azul muy claro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    color: #2c5282; /* Color de texto azul oscuro */
+}
+
+/* Destacado especial para las coincidencias exactas en los resultados */
+.exact-match {
+    background-color: #e6fffa; /* Fondo verde muy claro */
+    border-left: 4px solid #4CAF50; /* Borde izquierdo verde */
+    padding-left: 10px; /* Espacio interno izquierdo */
+}
+
+/* Estilo para la ventana modal (no visible por defecto) */
+.modal {
+    display: none; /* Oculto inicialmente */
+    position: fixed; /* Posición fija en la pantalla */
+    z-index: 1000; /* Nivel de apilamiento alto */
+    left: 0; /* Alineado a la izquierda */
+    top: 0; /* Alineado arriba */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0,0,0,0.5); /* Fondo semitransparente negro */
+    justify-content: center; /* Centrado horizontal del contenido */
+    align-items: center; /* Centrado vertical del contenido */
+}
+
+/* Estilo para el contenido de la ventana modal */
+.modal-content {
+    background-color: white; /* Fondo blanco */
+    padding: 25px; /* Espacio interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    width: 90%; /* Ancho relativo */
+    max-width: 500px; /* Ancho máximo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra */
+    position: relative; /* Para posicionar elementos internos */
+    animation: modalappear 0.3s ease; /* Animación de aparición */
+}
+
+/* Definición de la animación para la aparición del modal */
+@keyframes modalappear {
+    from {opacity: 0; transform: translateY(-20px);} /* Estado inicial */
+    to {opacity: 1; transform: translateY(0);} /* Estado final */
+}
+
+/* Botón para cerrar la ventana modal */
+.close-modal {
+    position: absolute; /* Posición absoluta dentro del contenedor */
+    top: 10px; /* Distancia desde arriba */
+    right: 15px; /* Distancia desde la derecha */
+    font-size: 22px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor tipo mano */
+    color: #718096; /* Color de texto gris */
+}
+
+/* Estilo para grupos de campos en formularios */
+.form-group {
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Estilo para las etiquetas de los campos de formulario */
+.form-group label {
+    display: block; /* Muestra como bloque para que ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio inferior */
+    font-weight: bold; /* Texto en negrita */
+    color: #4a5568; /* Color de texto gris */
+}
+
+/* Estilo común para campos de entrada en formularios */
+.form-control {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de fuente */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilo específico para áreas de texto en formularios */
+textarea.form-control {
+    min-height: 100px; /* Altura mínima */
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+}
+
+/* Estilo para botones de envío en formularios */
+.form-submit {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 12px 20px; /* Espacio interno (vertical, horizontal) */
+    border-radius: 4px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor tipo mano */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 100%; /* Ancho completo */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Cambio de estilo al pasar el cursor sobre el botón de envío */
+.form-submit:hover {
+    background-color: #45a049; /* Verde un poco más oscuro */
+}
+
+/* Estilo para notas informativas en formularios */
+.form-note {
+    font-size: 14px; /* Tamaño de fuente pequeño */
+    color: #718096; /* Color de texto gris */
+    margin-top: 10px; /* Espacio superior */
+    font-style: italic; /* Texto en cursiva */
+}
+
+/* Estilo para mensajes de éxito (oculto por defecto) */
+.success-message {
+    display: none; /* Oculto inicialmente */
+    text-align: center; /* Centrado horizontal */
+    padding: 20px; /* Espacio interno */
+    font-size: 18px; /* Tamaño de fuente */
+    color: #38a169; /* Color de texto verde */
+}
+
+/* Contenedor para botones de caracteres especiales del zapoteco */
+.special-chars-container {
+    background-color: #f5f8fa; /* Fondo gris azulado muy claro */
+    border-radius: 6px; /* Esquinas redondeadas */
+    padding: 10px; /* Espacio interno */
+    margin: 10px 0; /* Margen vertical */
+    display: none; /* Oculto por defecto */
+    border: 1px solid #ddd; /* Borde gris claro */
+}
+
+/* Título para la sección de caracteres especiales */
+.special-chars-title {
+    font-size: 14px; /* Tamaño de fuente */
+    margin-bottom: 8px; /* Espacio inferior */
+    color: #4a5568; /* Color de texto gris */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Contenedor de los botones de caracteres especiales */
+.special-chars-buttons {
+    display: flex; /* Disposición flexible */
+    gap: 10px; /* Espacio entre botones */
+    justify-content: flex-start; /* Alineación al inicio */
+}
+
+/* Estilo para los botones de caracteres especiales */
+.special-chars-buttons button {
+    font-size: 18px; /* Tamaño de fuente */
+    min-width: 48px; /* Ancho mínimo */
+    min-height: 48px; /* Alto mínimo */
+    padding: 6px 12px; /* Espacio interno */
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor tipo mano */
+    display: flex; /* Disposición flexible */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    color: #333; /* Color de texto gris oscuro */
+}
+
+/* Cambio de estilo al pasar el cursor sobre los botones de caracteres especiales */
+.special-chars-buttons button:hover {
+    background-color: #edf2f7; /* Fondo gris claro */
+}
+
+/* Estilos específicos para dispositivos móviles (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    /* Botones de caracteres especiales más grandes para facilitar el uso táctil */
+    .special-chars-buttons button {
+        min-width: 58px; /* Ancho mínimo mayor */
+        min-height: 58px; /* Alto mínimo mayor */
+        font-size: 22px; /* Fuente más grande */
+        padding: 10px 15px; /* Más espacio interno */
+    }
+    
+    /* Centrado de botones en dispositivos móviles */
+    .special-chars-buttons {
+        justify-content: center; /* Centrado horizontal */
+    }
+    
+    /* Centrado del título en dispositivos móviles */
+    .special-chars-title {
+        text-align: center; /* Centrado horizontal */
+    }
+}
